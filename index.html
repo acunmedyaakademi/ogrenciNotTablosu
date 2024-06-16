@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Not Tablosu</title>
+  <link rel="stylesheet" href="assets/css/not.css">
+  <script src="assets/js/not.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="students" autocomplete="off">
+      <label for="name">Adınızı Giriniz</label>
+      <input type="text" placeholder="Berat" name="name">
+      <label for="lname">Soyadınızı Giriniz</label>
+      <input type="text" placeholder="Dimen" name="lname">
+      <label for="section">Bölümünüzü Giriniz</label>
+      <select name="section">
+        <option value="" disabled selected value="">Bir Bölüm Seçiniz</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Mobile">Mobil</option>
+      </select>
+      <div class="a">
+        <p class="b">
+          <label for="vize1">Vize1 notunuzu Giriniz</label>
+          <input type="number" placeholder="80" id="vize1" name="vize1">
+        </p>
+        <p class="b"> <label for="vize2">Vize2 Notunuzu Giriniz</label>
+          <input type="number" placeholder="70" id="vize2" name="vize2">
+        </p>
+        <p class="b"> <label for="final">Final Notunuzu Giriniz</label>
+          <input type="number" placeholder="60" id="final" name="final">
+        </p>
+      </div>
+      <button type="submit">Gönder</button>
+    </form>
+    <button type="button" id="clearStorage">Tüm Verileri Sil</button>
+    <button id="addData">Örnek Öğrenci Liste Ekle</button>
+    <div class="tablo">
+      <h1>FrontEnd Bölümü</h1>
+      <div class="frontEnd"></div>
+
+      <h1>BackEnd Bölümü</h1>
+      <div class="backend"></div>
+
+      <h1>Mobil Bölümü</h1>
+      <div class="mobile"></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
